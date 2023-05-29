@@ -34,6 +34,8 @@ export default function App() {
   return (
     <>
     <div className=" p-3 ">
+{/*           <img src="img1.png" alt="logo" className="w-20 h-20 rounded-full mx-auto" />
+ */}
       <h1 className="text-white text-4xl mt-3">{title}</h1>
       <div className="shopping-list mt-3">
         <h2 className=" font-bold">Items To Buy</h2>

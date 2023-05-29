@@ -6,7 +6,7 @@ import Home from './home';
   
     return(
       <div className="App ">
-        <img src='./img1.png' alt="logo" className="logo"/>
+     
        
      <Home/>
       </div>
