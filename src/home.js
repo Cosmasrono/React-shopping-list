@@ -1,7 +1,19 @@
-import { useState } from "react";
+import { useState ,useEffect} from "react";
+
+
 
 export default function App() {
   const [items, setItems] = useState([]);
+  useEffect(() => {
+    const storedItems = localStorage.getItem("items");
+    if (storedItems) {
+      setItems(JSON.parse(storedItems));
+    }
+  }, []);
+  useEffect(() => {
+    localStorage.setItem("items", JSON.stringify(items));
+  }, [items]);
+
 
   function onRemoveItem(itemToRemove) {
     const newItems = items.filter((item) => item !== itemToRemove);
