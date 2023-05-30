@@ -1,5 +1,5 @@
 import { useState ,useEffect} from "react";
-
+ 
 
 
 export default function App() {
@@ -33,9 +33,11 @@ export default function App() {
 
   return (
     <>
-    <div className=" p-3 ">
-{/*           <img src="img1.png" alt="logo" className="w-20 h-20 rounded-full mx-auto" />
- */}
+    <div className=" p-3">
+          <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHGq1BkRbLcvOb_pHTDvPAuvRbxey_6IV6UQ&usqp=CAU}'
+          alt="logo" 
+          className="  items-start justify-start h-10 w-15 rounded-lg " />
+ 
       <h1 className="text-white text-4xl mt-3">{title}</h1>
       <div className="shopping-list mt-3">
         <h2 className=" font-bold">Items To Buy</h2>
@@ -47,7 +49,7 @@ export default function App() {
             placeholder="Add a new item"
             required
           />
-          <button className="bg-pink-900 p-3 m-3 rounded-md">Add</button>
+          <button className="bg-pink-900 p-3 m-3 rounded-md">Add Item</button>
         </form>
         <ul>
           {items.map((item, index) => (
